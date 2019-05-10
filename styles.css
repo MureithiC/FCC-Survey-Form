@@ -1,0 +1,68 @@
+body{
+font-family:'Raleway',sans-serif
+}
+div#content{
+max-width:650px;
+height:auto;
+margin:50px auto 0;
+padding:50px;
+background-color:rgb(28, 200, 206);
+color:#333;
+border:2px solid rgb(207, 235, 52);
+border-radius:20px 0 40px 0
+}
+#title{
+  text-decoration: underline;
+  color:red;
+}
+#title:hover {
+  colo r: green;
+}
+label{
+font-size:15px;
+font-weight:700
+  }
+input#name, #email, #number{
+background-repeat:no-repeat;
+background-position:6px;
+border:1px solid #DADADA;
+margin-top:10px;
+margin-bottom:10px;
+padding-left:5px;
+width:250px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+border-radius:5px;
+}
+input#submit {
+background-color:red;
+border-radius:5px;
+border:none;
+padding:10px 25px;
+color:#FFF;
+text-shadow:1px 1px 1px #949494;
+margin-top:10px;
+margin-left: 450px;
+}
+
+input#submit:hover{
+background-color:#4CAF50;
+}
+select,textarea{
+border:1px solid #DADADA;
+border-radius:5px;
+padding:5px;
+font-size:14px;
+box-shadow:0 0 10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+li{
+list-style:none;
+}
+#radio{
+margin-left: 6%;
+}
+
+   

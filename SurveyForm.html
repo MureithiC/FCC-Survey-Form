@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ 
+
+</head>
+
+<body>
+  <main>
+    <div id="content">
+      <h1 id="title"><strong>Survey Form</strong></h1>
+      <p id="description"> This is a survey form to collect feedback about FreeCodeCamp</p>
+
+      <form id="survey-form"><br>
+        <div id="personal-info">
+          <label for="names" id="name-label">*Name: </label><br>
+          <input type="text" name="fullnames" placeholder="Enter Your Full Names" id="name" required><br>
+
+          <label for="email" id="email-label">*Email:</label><br>
+          <input type="email" name="email" placeholder="Enter Your Email" id="email" required><br>
+
+          <label for="age" id="number-label">*Age:</label><br>
+          <input type="number" name="age" placeholder="Age" id="number" min="15" max="50"><br>
+        </div>
+
+        <!--Selection section-->
+        <div>
+          <label>Which option best describes your current role?</label><br>
+          <select id="dropdown">
+			<option value="" disabled selected>select an option</option>
+			<option value="Student">Student</option>
+			<option value="Unemployed">Unemployed</option>
+			<option value="part-time worker">Part-time worker</option>
+			<option value="full-time learner">Full-time Learner</option>
+			<option value="prefer not to say">Prefer not to say</option>
+			<option value="Other">Other</option> 
+
+		</select>
+        </div>
+        <!--radio section-->
+
+        <label class="labels">*How likely is that you would recommend freeCodeCamp to a friend?</label></br>
+        <div id="radio">
+          <input type="radio" name="answer" value="definately"> Definately<br>
+          <input type="radio" name="answer" value="maybe"> Maybe<br>
+          <input type="radio" name="answer" value="not sure"> Not sure<br>
+        </div>
+        <!--section-->
+
+        <label>What do you like most in FCC:</label>
+        <div id="select">
+          <select>
+			<option value="" disabled selected>select an option</option>
+			<option value="challenges">Challenges</option>
+			<option value="projects">Projects</option>
+			<option value="commuity">Commuity</option>
+			<option value="open source">Open Source</option>
+			<option value="Other">Other</option> 
+		</select><br>
+        </div>
+        <!--Checkbox-->
+
+        <label>Things that should be improved in the future(Check all that apply):</label>
+        <ul>
+          <li><input type="checkbox" value="frontEndProjects">Front-end Projects </li>
+          <li><input type="checkbox" value="BackEndProjects">Back-end Projects</li>
+          <li><input type="checkbox" value="dataVisualization">Data Visualization</li>
+          <li><input type="checkbox" value="challenges">Challenges</li>
+          <li><input type="checkbox" value="openSouceCommunity">Open Source Community</li>
+          <li><input type="checkbox" value="gitterHelpRooms">Gitter help rooms</li>
+          <li><input type="checkbox" value="videos">Videos</li>
+          <li><input type="checkbox" value="cityMeetups">City Meetups</li>
+          <li><input type="checkbox" value="wiki">Wiki</li>
+          <li><input type="checkbox" value="Forum">Forum</li>
+          <li><input type="checkbox" value="additionalCourses">Additional Courses</li>
+        </ul>
+        <label>Any Comments or Suggestions?</label><br>
+        <textarea rows="4" cols="50" id="textarea"> Enter text here.. </textarea><br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+  </main>
+  <footer>This Form is built by Cyrus and no pragialized content or code.</footer>
+</body>
+</html
